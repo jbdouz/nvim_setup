@@ -42,6 +42,9 @@ return require('packer').startup(function(use)
     requires = {{'nvim-lua/plenary.nvim'}}
   }
 
+  -- html tag autocompletion
+  use 'mattn/emmet-vim'
+
   -- autocompletion
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-buffer'

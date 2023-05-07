@@ -110,6 +110,11 @@ _G.packer_plugins = {
     path = "/Users/shengyangsun/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/Users/shengyangsun/.local/share/nvim/site/pack/packer/start/emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
+  },
   fd = {
     loaded = true,
     path = "/Users/shengyangsun/.local/share/nvim/site/pack/packer/start/fd",
