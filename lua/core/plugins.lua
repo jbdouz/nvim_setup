@@ -29,7 +29,7 @@ return require('packer').startup(function(use)
 
   -- status line
   use 'nvim-lualine/lualine.nvim'
-  use 'nvim-treesitter/nvim-treesitter' -- syntax highlighting
+  use'nvim-treesitter/nvim-treesitter' -- syntax highlighting
 
   -- telescope dependencies
   use 'BurntSushi/ripgrep'
