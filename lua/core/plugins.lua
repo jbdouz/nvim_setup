@@ -43,7 +43,7 @@ return require('packer').startup(function(use)
   }
 
   -- autocompletion
-  use 'hrsh7th/nvim-cmp' 
+  use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
 
@@ -51,6 +51,8 @@ return require('packer').startup(function(use)
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
   use 'rafamadriz/friendly-snippets'
+  use 'hrsh7th/vim-vsnip'
+  use 'hrsh7th/vim-vsnip-integ'
 
   -- managing & installing lsp servers
   use 'williamboman/mason.nvim'
