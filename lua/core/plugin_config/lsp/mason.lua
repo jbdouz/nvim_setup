@@ -29,5 +29,6 @@ mason_lspconfig.setup({
     "ruff_lsp",
     "r_language_server",
     "sqlls",
+    "html",
   }
 })
