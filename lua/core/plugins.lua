@@ -92,8 +92,29 @@ return require('packer').startup(function(use)
 
   -- vimwiki, notetaking...
   use 'vimwiki/vimwiki'
-  use "oberblastmeister/neuron.nvim"
-  use 'nvim-lua/popup.nvim'
+  -- use "oberblastmeister/neuron.nvim"
+
+  use {
+    "nvim-neorg/neorg",
+    tag = "*",
+    config = function()
+        require('neorg').setup {
+            load = {
+                ["core.defaults"] = {}, -- Loads default behaviour
+                ["core.concealer"] = {}, -- Adds pretty icons to your documents
+                ["core.dirman"] = { -- Manages Neorg workspaces
+                    config = {
+                        workspaces = {
+                            notes = "~/notes",
+                        },
+                    },
+                },
+            },
+        }
+    end,
+    run = ":Neorg sync-parsers",
+    requires = "nvim-lua/plenary.nvim",
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
