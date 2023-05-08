@@ -105,7 +105,7 @@ return require('packer').startup(function(use)
                 ["core.dirman"] = { -- Manages Neorg workspaces
                     config = {
                         workspaces = {
-                            notes = "~/notes",
+                            notes = "~/jbdouz@gmail.com - Google Drive/My Drive/notes",
                         },
                     },
                 },
