@@ -155,6 +155,11 @@ _G.packer_plugins = {
     path = "/Users/shengyangsun/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["neuron.nvim"] = {
+    loaded = true,
+    path = "/Users/shengyangsun/.local/share/nvim/site/pack/packer/start/neuron.nvim",
+    url = "https://github.com/oberblastmeister/neuron.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/shengyangsun/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -194,6 +199,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/shengyangsun/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "/Users/shengyangsun/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
   },
   ripgrep = {
     loaded = true,
@@ -244,6 +254,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/shengyangsun/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ",
     url = "https://github.com/hrsh7th/vim-vsnip-integ"
+  },
+  vimwiki = {
+    loaded = true,
+    path = "/Users/shengyangsun/.local/share/nvim/site/pack/packer/start/vimwiki",
+    url = "https://github.com/vimwiki/vimwiki"
   }
 }
 

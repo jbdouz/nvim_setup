@@ -90,6 +90,11 @@ return require('packer').startup(function(use)
     end
   }
 
+  -- vimwiki, notetaking...
+  use 'vimwiki/vimwiki'
+  use "oberblastmeister/neuron.nvim"
+  use 'nvim-lua/popup.nvim'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
