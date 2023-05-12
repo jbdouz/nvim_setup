@@ -3,7 +3,21 @@ local neorg = require('neorg')
 neorg.setup {
     load = {
         ["core.defaults"] = {},
-        ['core.concealer'] = {},
+        ['core.concealer'] = {
+            config = {
+                icons = {
+                    todo = {
+                        uncertain = {
+                            icon = "?",
+                        }
+                    }
+                },
+                icon_preset = "basic",
+                folds = {
+                    fdls = 2,
+                }
+            }
+        },
         ['core.dirman'] = {
           config = {
             workspaces = {

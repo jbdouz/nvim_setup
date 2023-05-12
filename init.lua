@@ -7,8 +7,9 @@
 -- These keybindings need to be defined before the first /
 -- is called; otherwise, it will default to "\"
 --
--- vim.g.mapleader = ","
--- vim.g.localleader = "\\"
+
+vim.g.mapleader = " "
+vim.g.maplocalleader = ","
 -- vim.o.runtimepath = vim.fn.stdpath('data') .. '/site/pack/*/start/*,' .. vim.o.runtimepath
 
 -- IMPORTS

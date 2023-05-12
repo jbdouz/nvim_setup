@@ -9,8 +9,6 @@ local map = vim.api.nvim_set_keymap
 -- options
 -- map('i', 'jk', '', {})
 
-vim.g.mapleader = " "
-
 map("i", "jk", "<ESC>", {}) 
 -- "jk" to escape edit mode
 
