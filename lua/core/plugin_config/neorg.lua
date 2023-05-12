@@ -11,7 +11,6 @@ neorg.setup {
               extra_learning = "~/jbdouz@gmail.com - Google Drive/My Drive/notes/extra_learning",
               side_project = "~/jbdouz@gmail.com - Google Drive/My Drive/notes/side_project",
             },
-            default_workspace = "shcool"
           }
         }
     }
