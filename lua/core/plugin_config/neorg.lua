@@ -24,6 +24,7 @@ neorg.setup {
               school = "~/jbdouz@gmail.com - Google Drive/My Drive/notes/school",
               extra_learning = "~/jbdouz@gmail.com - Google Drive/My Drive/notes/extra_learning",
               side_project = "~/jbdouz@gmail.com - Google Drive/My Drive/notes/side_project",
+              coding_cheatsheet = "~/jbdouz@gmail.com - Google Drive/My Drive/notes/coding_cheatsheet",
             },
           }
         }
