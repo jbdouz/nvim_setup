@@ -29,6 +29,11 @@ map("n", "<leader>tx", ":tabclose<CR>", {}) -- close current tab
 map("n", "<leader>tn", ":tabn<CR>", {}) -- go to next tab
 map("n", "<leader>tp", ":tabp<CR>", {}) -- go to previous tab
 
+-- latex live review 
+map("n",  "<Leader>p", ":LatexPreviewToggle<CR>", {})
+map("n",  "<Leader>[", ":PrevLatexPreviewMode", {})
+map("n",  "<Leader>]", ":NextLatexPreviewMode<CR>", {})
+
 -- plugin keymaps
 
 map("n", "<leader>sm", ":MaximizerToggle<CR>", {}) -- vim-maximizer

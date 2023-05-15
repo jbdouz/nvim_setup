@@ -96,10 +96,13 @@ return require('packer').startup(function(use)
 
   use {
     "nvim-neorg/neorg",
-    tag = "*",
+    tag = "v4.0.0",
     run = ":Neorg sync-parsers",
     requires = "nvim-lua/plenary.nvim",
   }
+
+  -- latex live preview
+  use 'emakman/nvim-latex-previewer'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

@@ -165,6 +165,11 @@ _G.packer_plugins = {
     path = "/Users/shengyangsun/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-latex-previewer"] = {
+    loaded = true,
+    path = "/Users/shengyangsun/.local/share/nvim/site/pack/packer/start/nvim-latex-previewer",
+    url = "https://github.com/emakman/nvim-latex-previewer"
+  },
   ["nvim-lsp-installer"] = {
     loaded = true,
     path = "/Users/shengyangsun/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
