@@ -96,7 +96,8 @@ return require('packer').startup(function(use)
 
   use {
     "nvim-neorg/neorg",
-    tag = "v4.0.0",
+    -- tag = "v4.0.0",
+    tag = "*",
     run = ":Neorg sync-parsers",
     requires = "nvim-lua/plenary.nvim",
   }
