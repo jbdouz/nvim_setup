@@ -27,6 +27,21 @@ neorg.setup {
               coding_cheatsheet = "~/jbdouz@gmail.com - Google Drive/My Drive/notes/coding_cheatsheet",
             },
           }
-        }
+        },
+        ['core.highlights'] = {},
+        ['core.keybinds'] = {},
+        ['core.mode'] = {},
+        ['core.neorgcmd'] = {},
+        ['core.autocommands'] = {},
+        ['core.integrations.treesitter'] = {},
+        ['core.export'] = {
+            config = {
+                export_dir = {
+                 "~/jbdouz@gmail.com - Google Drive/My Drive/notes/export_dir/html-export",
+                 "~/jbdouz@gmail.com - Google Drive/My Drive/notes/export_dir/pdf-export",
+                 "~/jbdouz@gmail.com - Google Drive/My Drive/notes/export_dir/md-export",
+                }
+            }
+        },
     }
 }
