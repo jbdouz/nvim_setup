@@ -1,3 +1,11 @@
+-- LEADER
+-- These keybindings need to be defined before the first /
+-- is called; otherwise, it will default to "\"
+
+vim.g.mapleader = " "
+vim.g.maplocalleader = ","
+-- vim.o.runtimepath = vim.fn.stdpath('data') .. '/site/pack/*/start/*,' .. vim.o.runtimepath
+
 -- [[ keys.lua ]]
 local map = vim.api.nvim_set_keymap
 
@@ -7,7 +15,6 @@ local map = vim.api.nvim_set_keymap
 -- sequence of keys to press
 -- command
 -- options
--- map('i', 'jk', '', {})
 
 map("i", "jk", "<ESC>", {}) 
 -- "jk" to escape edit mode
