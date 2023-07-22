@@ -1,3 +1,5 @@
+-- references: https://github.com/williamboman/mason-lspconfig.nvim/blob/main/doc/server-mapping.md
+
 local lspconfig = require('lspconfig')
 local cmp_nvim_lsp = require('cmp_nvim_lsp')
 local typescript = require('typescript')
@@ -42,43 +44,29 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
--- configure html server
+-- frontend
+--- configure html server
 lspconfig["html"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
-
--- local servers = {"cssls", "cssmodules_ls", "jdtls", "jedi_language_server", "jsonls", "ltex", "marksman", "prosemd_lsp", "pyre", "pyright", "pylsp", "quick_lint_js", "r_language_server", "remark_ls", "ruff_lsp", "spectral", "sqlls", "texlab", "unocss", "vtsls", "zk"}
---
--- for _,v in ipairs(servers) do
---   lspconfig[v].setup({
---     capabilities = capabilities,
---     on_attach = on_attach,
---   })
--- end
-
-lspconfig["pyright"].setup({
+--- CSS
+lspconfig["cssls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+lspconfig["cssmodules_ls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+--- javascript
+---- quick_lint_js finds bugs in javascript
+lspconfig["quick_lint_js"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
 
-lspconfig["sourcery"].setup {
-  init_options = {
-        --- The Sourcery token for authenticating the user.
-        --- This is retrieved from the Sourcery website and must be
-        --- provided by each user. The extension must provide a
-        --- configuration option for the user to provide this value.
-        token = "user_5PpYj8LopCUNr4wtWHVg_Wto8OEC_RTTVRGyMNvfiqAP7zmaSaTsHqHvcn0",
-
-        --- The extension's name and version as defined by the extension.
-        extension_version = 'vim.lsp',
-
-        --- The editor's name and version as defined by the editor.
-        editor_version = 'vim',
-    },
-}
-
--- configure typescript server with plugin
+--- configure typescript server with plugin
 typescript.setup({
   server = {
     capabilities = capabilities,
@@ -86,7 +74,69 @@ typescript.setup({
   },
 })
 
--- configure lua server (with special settings)
+-- python
+lspconfig["pyright"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+lspconfig["sourcery"].setup {
+  init_options = {
+    --- The Sourcery token for authenticating the user.
+    --- This is retrieved from the Sourcery website and must be
+    --- provided by each user. The extension must provide a
+    --- configuration option for the user to provide this value.
+    token = "user_5PpYj8LopCUNr4wtWHVg_Wto8OEC_RTTVRGyMNvfiqAP7zmaSaTsHqHvcn0",
+
+    --- The extension's name and version as defined by the extension.
+    extension_version = 'vim.lsp',
+
+    --- The editor's name and version as defined by the editor.
+    editor_version = 'vim',
+  },
+}
+
+-- Java
+lspconfig["jdtls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+lspconfig["java_language_server"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+-- latex
+lspconfig["ltex"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+--- texlab: A completion engine built from scratch for (La)TeX.
+lspconfig["texlab"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+-- markdown
+lspconfig["marksman"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+-- R
+lspconfig["r_language_server"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+-- SQL
+lspconfig["sqlls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+-- Shell scripting
+--- configure lua server (with special settings)
 lspconfig["lua_ls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
@@ -107,4 +157,9 @@ lspconfig["lua_ls"].setup({
   },
 })
 
+--- bash language server
+lspconfig["bashls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
 

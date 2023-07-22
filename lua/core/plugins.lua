@@ -60,12 +60,13 @@ return require('packer').startup(function(use)
   use 'hrsh7th/vim-vsnip-integ'
 
   -- managing & installing lsp servers
-  use 'williamboman/mason.nvim'
-  use 'williamboman/mason-lspconfig.nvim'
-  use 'williamboman/nvim-lsp-installer'
-
+  use {
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim',
+    'williamboman/nvim-lsp-installer',
+    'neovim/nvim-lspconfig',
+  }
   -- configuring lsp servers
-  use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'
   use({ 'glepnir/lspsaga.nvim', branch = 'main' })
   use 'jose-elias-alvarez/typescript.nvim'
