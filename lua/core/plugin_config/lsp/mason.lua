@@ -5,9 +5,11 @@ mason.setup()
 
 mason_lspconfig.setup({
   ensure_installed = {
+    "bashls",
     "cssls",
     "cssmodules_ls",
     "unocss",
+    "java_language_server",
     "jsonls",
     "jdtls",
     "quick_lint_js",
