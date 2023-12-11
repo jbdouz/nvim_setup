@@ -60,5 +60,10 @@ map("i", "\"", "\"\"<Esc>ha", {noremap = true})
 map("i", "'", "''<Esc>ha", {noremap = true})
 map("i", "`", "``<Esc>ha", {noremap = true})
 
+-- markdown preview
+map('n', '<leader>pv', '<Plug>MarkdownPreview', { noremap = false, silent = true })
+map('n', '<leader>ps', '<Plug>MarkdownPreviewStop', { noremap = false, silent = true })
+map('n', '<leader>pt', '<Plug>MarkdownPreviewToggle', { noremap = false, silent = true })
+
 
 
