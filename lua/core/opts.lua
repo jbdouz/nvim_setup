@@ -1,5 +1,6 @@
 --[[ opts.lua ]]
 local opt = vim.opt
+local g = vim.g
 
 -- [[ Context ]]
 -- opt.colorcolumn = '80'           -- str:  Show col for max line length

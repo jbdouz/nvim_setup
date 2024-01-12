@@ -265,6 +265,11 @@ _G.packer_plugins = {
     path = "/Users/shengyangsun/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ",
     url = "https://github.com/hrsh7th/vim-vsnip-integ"
   },
+  vimtex = {
+    loaded = true,
+    path = "/Users/shengyangsun/.local/share/nvim/site/pack/packer/start/vimtex",
+    url = "https://github.com/lervag/vimtex"
+  },
   vimwiki = {
     loaded = true,
     path = "/Users/shengyangsun/.local/share/nvim/site/pack/packer/start/vimwiki",
