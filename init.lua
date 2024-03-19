@@ -9,4 +9,5 @@ require('core.vars')      -- Variables
 require('core.opts')      -- Options
 require('core.keys')      -- Keymaps
 require('core.plugins')      -- Plugins
+require('core.custom_functions') -- custom_functions
 require('core.plugin_config')
